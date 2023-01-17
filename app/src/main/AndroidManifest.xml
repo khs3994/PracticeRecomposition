@@ -13,16 +13,25 @@
         android:theme="@style/Theme.PracticeRecomposition"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".remember.RememberActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_remember"
             android:theme="@style/Theme.PracticeRecomposition">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PracticeRecomposition">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
